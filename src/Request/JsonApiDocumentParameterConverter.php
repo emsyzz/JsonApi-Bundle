@@ -121,7 +121,7 @@ class JsonApiDocumentParameterConverter implements ParamConverterInterface
 
         foreach ($contentType as $header)
         {
-            if (preg_match('/^application\/([\w\.]+\+)?json$/', ltrim($header)) {
+            if (preg_match('/^application\/([\w\.]+\+)?json$/', ltrim($header))) {
                 return true;
             }
         }
