@@ -98,9 +98,6 @@ class JsonApiDocumentParameterConverter implements ParamConverterInterface
     protected function processDocument(string $content): AbstractDocument
     {
         $decoded = $this->decodeContent($content);
-        if (!isset($decoded->data->id)) {
-            $decoded->data->id = null;
-        }
 
         try {
             $document = $this->hydrator->hydrate($decoded);
