@@ -2,6 +2,13 @@
     "name": "mikemirten/json-api-bundle",
     "license": "GPL-3.0",
 
+    "repositories": [
+        {
+            "url": "https://github.com/emsyzz/json-api.git",
+            "type": "git"
+        }
+    ],
+
     "require": {
         "php": ">=7.0",
         "mikemirten/json-api": ">=0.33",
